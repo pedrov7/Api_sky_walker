@@ -2,6 +2,8 @@ import './App.css';
 
 import Menu from './components/Menu';
 
+import {Router} from '@reach/router';
+import { Identificacion } from './components/Identificacion';
 
 
 const App = () => {
@@ -14,7 +16,18 @@ const App = () => {
       
       <div className="col-5">
       <div className="container p-3 my-5 bg-dark text-white">Luke Apiwalker</div>
-        <Menu />
+       
+      
+
+        <Router>
+
+
+        <Menu path='/' />
+        <Identificacion path="/:id"/>
+      
+        </Router> 
+        
+      
       </div>
     </div>
 

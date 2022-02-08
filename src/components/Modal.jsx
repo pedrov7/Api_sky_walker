@@ -18,7 +18,7 @@ export const Modal = ({enviaModal,setError,propiedad}) => {
 
         // style = {{display: 'block'}}
 
-        <div  className= {display} tabindex="-1">
+        <div  className= {display} tabIndex="-1">
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">
